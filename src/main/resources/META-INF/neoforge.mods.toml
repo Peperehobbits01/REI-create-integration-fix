@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+
+license = "${mod_license}"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+displayURL = "https://github.com/peperehobbits01/rcif"
+logoFile = "rejei_banner.png"
+logoBlur = false
+authors = "Peperehobbits01 Studio"
+description = '''Adds Create machine recipe categories to Roughly Enough Items (REI).'''
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "roughlyenoughitems"
+type = "required"
+versionRange = "[15.0.0,)"
+ordering = "AFTER"
+side = "CLIENT"
+
+[[dependencies.${mod_id}]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[modproperties."${mod_id}"]
+catalogueImageIcon = "rejei_icon.png"
+catalogueBackground = "rejei_background.png"
+configuredBackground = "minecraft:textures/block/stone.png"

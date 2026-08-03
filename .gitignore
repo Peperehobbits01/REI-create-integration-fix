@@ -26,3 +26,8 @@ replay_pid*
 #IDE
 .idea
 .vscode
+
+#Build folders
+run
+build
+.gradle
